@@ -1,15 +1,24 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Seleciona os links de navegação dentro da navbar
-  const navLinks = document.querySelectorAll('.nav-link');
-  const navbarCollapse = document.querySelector('.navbar-collapse');
+ // Função para rolagem suave e ocultar o menu
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-  // Adiciona o evento de clique em cada link
-  navLinks.forEach(link => {
-    link.addEventListener('click', function () {
-      // Verifica se o menu está aberto e fecha
+      const target = document.querySelector(this.getAttribute('href'));
+      const offset = 90; // Offset para compensar o cabeçalho
+
+      // Rolagem suave
+      window.scrollTo({
+          top: target.offsetTop - offset,
+          behavior: 'smooth'
+      });
+
+      // Ocultar o menu após o clique
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      const navbarCollapse = document.querySelector('#navbarNav');
+
       if (navbarCollapse.classList.contains('show')) {
-        new bootstrap.Collapse(navbarCollapse).toggle();
+          navbarCollapse.classList.remove('show');
+          navbarToggler.setAttribute('aria-expanded', 'false');
       }
-    });
   });
 });
