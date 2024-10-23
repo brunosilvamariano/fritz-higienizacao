@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fritz | Higienizaçãot</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Links para Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <!-- Link para Awesome Icons (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link para Bootstrap Icons (ícones) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Links para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo global para controle do tamanho da fonte */
+        html {
+            font-size: 87.5%; /* 1rem = 14px */
+            scroll-behavior: smooth; /* Rolagem suave */
+        }
+
+        /* Estilo personalizado para o toggler */
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1); /* Altera a cor da borda */
+        }
+
+        /* Altera a cor do ícone do toggler para branco */
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M2 7h26M2 15h26M2 23h26'/%3E%3C/svg%3E");
+        }
+         /* Estilo para a imagem ser responsiva */
+         .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho semântico e estiloso -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #0e2947;">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#" aria-label="Página inicial - Fritz Higienização">
+                <img src="assets/image/logo.svg" alt="Logo da Fritz Higienização, que representa os serviços de limpeza e higienização" class="logo">
+            </a>
+            <!-- Botão de menu responsivo -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir ou fechar o menu de navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu de navegação -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#home" aria-label="Ir para a seção Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#services" aria-label="Ir para a seção Serviços">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#about" aria-label="Ir para a seção Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#work" aria-label="Ir para a seção Meus Trabalhos">Meus Trabalhos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#contact" aria-label="Ir para a seção Contato">Contato</a>
+                    </li>
+                    <!-- Botão de WhatsApp -->
+                    <li class="nav-item">
+                        <a href="https://wa.me/554799051278?text=Olá!%20Recentemente,%20visitei%20o%20site%20e%20estou%20interessado%20em%20solicitar%20um%20orçamento%20para%20os%20serviços%20de%20higienização." target="_blank" class="btn btn-outline-success ms-3 d-flex align-items-center" aria-label="Entrar em contato via WhatsApp">
+                            <i class="bi bi-whatsapp me-2"></i> (47) 99905-1278
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Seções Main -->
+    <main>
+        <!-- Início da seção Home -->
+        <section id="home" class="text-dark py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <!-- Coluna com a imagem (ou GIF) -->
+                    <figure class="col-md-6 "> <!-- Adicionei mb-4 para margem inferior -->
+                        <img src="assets/image/banner-home.svg" alt="Banner de serviços de higienização e impermeabilização de estofados" class="img-fluid">
+                    </figure>
+                    <!-- Coluna com o conteúdo à direita -->
+                    <article class="col-md-6">
+                        <header>
+                            <h2 class="fw-bold fs-1">
+                               Respire Profundamente. Seu estofado higienizado como de fabrica, com a Fritz!
+                            </h2>
+                        </header>
+                        <p class="mt-3">
+                            Na <strong>Fritz Higienização</strong>, oferecemos serviços de limpeza de estofados que <strong>garantem</strong> a <strong>remoção de ácaros</strong>, <strong>manchas</strong> e <strong>odores</strong>, proporcionando um ambiente mais <strong>saudável</strong> e agradável para você e sua família.
+                        </p>
+                        <div class="mt-3">
+                            <a href="https://wa.me/554799051278?text=Olá,%20acabei%20de%20visitar%20o%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento" target="_blank" class="btn btn-success text-uppercase" aria-label="Solicitar orçamento via WhatsApp">
+                                <i class="bi bi-whatsapp"></i> Quero solicitar um orçamento!
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Seção de Benefícios -->
+        <section id="benefits" class="py-5">
+            <div class="container">
+                <header class="text-center mb-4">
+                    <h2 class="fw-bold">Benefícios de Nossos Serviços</h2>
+                </header>
+                <div class="row">
+                    <!-- Cartão 1 -->
+                    <article class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 shadow border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <i class="bi bi-check-circle me-2" style="font-size: 2rem; color: var(--primary-blue);"></i>
+                                <p class="card-text">Eliminação de odores desagradáveis, como os causados por urina de pets.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Cartão 2 -->
+                    <article class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 shadow border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <i class="bi bi-check-circle me-2" style="font-size: 2rem; color: var(--primary-blue);"></i>
+                                <p class="card-text">Utilizamos produtos profissionais que são veganos e biodegradáveis, garantindo segurança para você e o meio ambiente.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Cartão 3 -->
+                    <article class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 shadow border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <i class="bi bi-check-circle me-2" style="font-size: 2rem; color: var(--primary-blue);"></i>
+                                <p class="card-text">Removemos 99% dos ácaros e 80% das manchas, proporcionando um ambiente mais limpo e saudável.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Cartão 4 -->
+                    <article class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 shadow border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <i class="bi bi-check-circle me-2" style="font-size: 2rem; color: var(--primary-blue);"></i>
+                                <p class="card-text">Higienização completa e tratamento estético para estofados, revitalizando seus móveis.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section> 
+        <!-- Início da Seção de Serviços -->
+        <section id="services" class="container-fluid py-5">
+            <div class="container">
+                <!-- Título da Seção -->
+                <header class="text-center mb-4">
+                    <h2 class="fw-bold">Nossos Serviços</h2>
+                    <p class="lead">Oferecemos uma variedade de serviços de higienização e impermeabilização para garantir a limpeza e preservação dos seus estofados.</p>
+                </header>
+                <div class="row align-items-center">
+                    <!-- Lista de Serviços à Esquerda -->
+                    <article class="col-md-6">
+                        <ul class="list-unstyled">
+                            <!-- Serviço 1 -->
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-check-circle me-2" style="font-size: 1.5rem; color: var(--primary-blue);"></i>
+                                <div>
+                                    <strong>Higienização de Sofá:</strong> Remoção de manchas, ácaros e odores.
+                                </div>
+                            </li>
+                            <!-- Serviço 2 -->
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-check-circle me-2" style="font-size: 1.5rem; color: var(--primary-blue);"></i>
+                                <div>
+                                    <strong>Higienização de Colchão:</strong> Limpeza profunda para garantir uma noite de sono saudável.
+                                </div>
+                            </li>
+                            <!-- Serviço 3 -->
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-check-circle me-2" style="font-size: 1.5rem; color: var(--primary-blue);"></i>
+                                <div>
+                                    <strong>Limpeza e Higienização de Tapetes:</strong> Preservação e limpeza de tecidos delicados.
+                                </div>
+                            </li>
+                            <!-- Serviço 4 -->
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-check-circle me-2" style="font-size: 1.5rem; color: var(--primary-blue);"></i>
+                                <div>
+                                    <strong>Impermeabilização:</strong> Proteção contra líquidos e manchas.
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Botão de WhatsApp -->
+                        <a href="https://wa.me/554799051278?text=Olá,%20acabei%20de%20visitar%20o%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento" target="_blank" class="btn btn-success text-uppercase fw-bold">
+                            <i class="bi bi-whatsapp"></i> Quero um orçamento!
+                        </a>
+                    </article>
+                    <!-- Vídeo à Direita -->
+                    <figure class="col-md-6 text-center">
+                        <video autoplay muted loop playsinline class="img-fluid rounded">
+                            <source src="assets/video/Fun Traditional Marketing VS Digital Marketing Comparison Graph.mp4" type="video/mp4">
+                            Seu navegador não suporta a tag de vídeo.
+                        </video>
+                        <figcaption class="mt-2">Conheça nossos serviços em ação!</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- Início da Seção de Vantagens -->
+        <section id="advantages" class="py-5" style="background-color: #a4b8d1;">
+            <div class="container">
+                <header class="text-center mb-4">
+                    <h2 class="fw-bold">Vantagens de Nossos Serviços</h2>
+                    <p class="lead">Conheça os benefícios de contar com nossos serviços de higienização e impermeabilização.</p>
+                </header>
+                <div class="row">
+                    <!-- Vantagem 1 -->
+                    <article class="col-md-4 mb-4"> 
+                        <div class="card h-100 shadow-sm border-0 glass-effect">
+                            <div class="card-body d-flex align-items-start">
+                                <i class="fas fa-heartbeat me-2" style="font-size: 2rem; color: var(--primary-blue);"></i>
+                                <div>
+                                    <h5 class="card-title">Saúde</h5>
+                                    <p class="card-text">Eliminamos fungos, ácaros, bactérias, maus odores e evitamos problemas alérgicos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Vantagem 2 -->
+                    <article class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0 glass-effect">
+                            <div class="card-body d-flex align-items-start">
+                                <i class="fas fa-broom me-2" style="font-size: 2rem; color: var(--primary-blue);"></i>
+                                <div>
+                                    <h5 class="card-title">Limpeza</h5>
+                                    <p class="card-text">Com a limpeza, removemos toda a sujeira da superfície, deixando seu sofá como novo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Vantagem 3 -->
+                    <article class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm border-0 glass-effect">
+                            <div class="card-body d-flex align-items-start">
+                                <i class="fas fa-user-check me-2" style="font-size: 2rem; color: var(--primary-blue);"></i>
+                                <div>
+                                    <h5 class="card-title">Profissionalismo</h5>
+                                    <p class="card-text">Contamos com uma equipe especializada em limpeza e higienização de estofados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+       <!-- Início da Seção de About -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Texto à Esquerda -->
+                    <article class="col-md-6 glass-effect p-4">
+                        <header>
+                            <h2 class="fw-bold">Sobre a Fritz Higienização</h2>
+                        </header>
+                        <p>A <strong>Fritz Higienização</strong> é uma empresa especializada em <strong>higienização</strong> e <strong>estética de estofados</strong>, comprometida em oferecer soluções que vão além da <strong>limpeza superficial</strong>.</p>
+                        <p>Fundada em 2022 por <strong>Alfredo Miguel Rieck</strong>, um empreendedor apaixonado por limpeza, a Fritz acredita que a higienização de estofados não se resume apenas à estética; trata-se de um cuidado essencial para a sua <strong>saúde</strong> e <strong>bem-estar</strong>.</p>
+                        <p>Nosso propósito é proporcionar <strong>saúde</strong> e <strong>conforto</strong> aos nossos clientes, entregando muito mais do que uma simples limpeza. Com um foco na <strong>qualidade de vida</strong>, buscamos transformar cada espaço em um ambiente mais <strong>saudável</strong> e <strong>acolhedor</strong>.</p>
+                        <p>Para isso, contamos com <strong>equipamentos avançados</strong> e <strong>produtos de alta qualidade</strong>, garantindo o cuidado necessário para você e seu estofado.</p>
+                        
+                        <h5>Nossos Valores</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Qualidade e Profissionalismo</li>
+                            <li><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Sustentabilidade e Inovação</li>
+                            <li><i class="fa fa-check-circle me-2" aria-hidden="true"></i>Compromisso com o Cliente</li>
+                        </ul>
+
+                        <!-- Botão de WhatsApp -->
+                        <a href="https://wa.me/554799051278?text=Olá,%20acabei%20de%20visitar%20o%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento" target="_blank" class="btn btn-success text-uppercase fw-bold" aria-label="Agendar limpeza via WhatsApp">
+                            <i class="bi bi-whatsapp"></i> Agende a sua limpeza!
+                        </a>
+                    </article>
+
+                    <!-- Imagem à Direita -->
+                    <figure class="col-md-6">
+                        <img src="assets/image/banner-lateral.svg" alt="Equipe Fritz Higienização" class="img-fluid rounded shadow">
+                        <figcaption class="text-center mt-2">Nossa dedicada equipe em ação.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+       <!-- MEUS TRABALHOS -->
+        <section id="work" class="py-5">
+            <div class="container">
+                <header>
+                    <h2 class="text-center fw-bold mb-4">Meus Trabalhos</h2>
+                </header>
+                <div id="worksCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <article class="carousel-item active">
+                            <div class="row flex-nowrap">
+                                <div class="col-md-4 col-12 mb-4">
+                                    <figure class="card h-100">
+                                        <img src="https://via.placeholder.com/400x200.png?text=Limpeza+de+Sof%C3%A1" class="card-img-top" alt="Trabalho 1">
+                                        <figcaption class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Limpeza de Sofá</h5>
+                                            <p class="card-text">Sofá de couro limpo e restaurado, proporcionando conforto e elegância ao ambiente.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <figure class="card h-100">
+                                        <img src="https://via.placeholder.com/400x200.png?text=Higieniza%C3%A7%C3%A3o+de+Estofados" class="card-img-top" alt="Trabalho 2">
+                                        <figcaption class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Higienização de Estofados</h5>
+                                            <p class="card-text">Estofados limpos com atenção aos detalhes, garantindo um ambiente saudável.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <figure class="card h-100">
+                                        <img src="https://via.placeholder.com/400x200.png?text=Limpeza+de+Tapetes" class="card-img-top" alt="Trabalho 3">
+                                        <figcaption class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Limpeza de Tapetes</h5>
+                                            <p class="card-text">Tapetes higienizados, revitalizando a beleza e frescor do seu lar.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Slide 2 -->
+                        <article class="carousel-item">
+                            <div class="row flex-nowrap">
+                                <div class="col-md-4 col-12 mb-4">
+                                    <figure class="card h-100">
+                                        <img src="https://via.placeholder.com/400x200.png?text=Limpeza+de+Poltronas" class="card-img-top" alt="Trabalho 4">
+                                        <figcaption class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Limpeza de Poltronas</h5>
+                                            <p class="card-text">Poltronas limpas e confortáveis, perfeitas para relaxar.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <figure class="card h-100">
+                                        <img src="https://via.placeholder.com/400x200.png?text=Restauro+de+Estofados" class="card-img-top" alt="Trabalho 5">
+                                        <figcaption class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Restauro de Estofados</h5>
+                                            <p class="card-text">Restauramos estofados antigos, trazendo nova vida a peças valiosas.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4 col-12 mb-4">
+                                    <figure class="card h-100">
+                                        <img src="https://via.placeholder.com/400x200.png?text=Limpeza+de+Cadeiras" class="card-img-top" alt="Trabalho 6">
+                                        <figcaption class="card-body d-flex flex-column">
+                                            <h5 class="card-title">Limpeza de Cadeiras</h5>
+                                            <p class="card-text">Cadeiras higienizadas, ideais para sua sala de jantar ou escritório.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Indicadores (Traços) -->
+                    <div class="d-flex justify-content-center mt-4">
+                        <button type="button" data-bs-target="#worksCarousel" data-bs-slide-to="0" class="active mx-2" aria-current="true" aria-label="Slide 1" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                        <button type="button" data-bs-target="#worksCarousel" data-bs-slide-to="1" class="mx-2" aria-label="Slide 2" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- Seção de Perguntas Frequentes -->
+        <section id="faq" class="py-5" style="background-color: #0e2947;">
+            <div class="container">
+                <h2 class="text-center text-white mb-4">Perguntas Frequentes</h2>
+                <div class="row">
+                    <!-- Coluna da Esquerda -->
+                    <div class="col-md-6">
+                        <article class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" aria-label="Expandir resposta para: O que está incluído na limpeza de estofados?">
+                                O que está incluído na limpeza de estofados?
+                            </button>
+                            <div id="collapseOne" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Nossa limpeza inclui a remoção de sujeira, manchas, ácaros e odores, utilizando produtos seguros e eficazes para garantir a saúde do seu ambiente.
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" aria-label="Expandir resposta para: Quanto tempo leva para limpar um sofá?">
+                                Quanto tempo leva para limpar um sofá?
+                            </button>
+                            <div id="collapseTwo" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    O tempo de limpeza depende do tamanho e estado do sofá, geralmente varia entre 1 a 3 horas.
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" aria-label="Expandir resposta para: Os produtos utilizados são seguros?">
+                                Os produtos utilizados são seguros?
+                            </button>
+                            <div id="collapseThree" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Sim, utilizamos produtos biodegradáveis e seguros para a saúde de pessoas e animais de estimação.
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Coluna da Direita -->
+                    <div class="col-md-6">
+                        <article class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" aria-label="Expandir resposta para: Posso agendar uma limpeza para o fim de semana?">
+                                Posso agendar uma limpeza para o fim de semana?
+                            </button>
+                            <div id="collapseFour" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Sim, oferecemos agendamentos durante a semana e nos fins de semana, conforme a disponibilidade.
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" aria-label="Expandir resposta para: É necessário retirar os móveis do local?">
+                                É necessário retirar os móveis do local?
+                            </button>
+                            <div id="collapseFive" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Não é necessário retirar os móveis; nossa equipe se adapta ao espaço disponível para realizar a limpeza.
+                                </div>
+                            </div>
+                        </article>
+                        <article class="faq-item">
+                            <button class="faq-button text-white" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" aria-label="Expandir resposta para: Como posso agendar uma limpeza?">
+                                Como posso agendar uma limpeza?
+                            </button>
+                            <div id="collapseSix" class="collapse" data-bs-parent="#faqAccordion">
+                                <div class="faq-answer text-white">
+                                    Você pode agendar uma limpeza diretamente pelo nosso site ou entrando em contato pelo WhatsApp.
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- Seção de Avaliações dos Clientes -->
+        <section id="reviews" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">Avaliações dos Clientes</h2>
+                <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row flex-nowrap">
+                                <article class="col-md-4 col-12 mb-4">
+                                    <div class="card h-100 border-0" style="border-radius: 15px;">
+                                        <img src="assets/images/cliente1.jpg" alt="Cliente 1" class="rounded-circle mx-auto mt-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">João da Silva</h5>
+                                            <p class="card-text fs-5 fst-italic">"A equipe da Fritz Higienização fez um excelente trabalho no meu sofá. Estou muito satisfeito!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="col-md-4 col-12 mb-4">
+                                    <div class="card h-100 border-0" style="border-radius: 15px;">
+                                        <img src="assets/images/cliente2.jpg" alt="Cliente 2" class="rounded-circle mx-auto mt-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Maria Oliveira</h5>
+                                            <p class="card-text fs-5 fst-italic">"Profissionais qualificados e um ótimo atendimento. Recomendo a Fritz Higienização!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="col-md-4 col-12 mb-4">
+                                    <div class="card h-100 border-0" style="border-radius: 15px;">
+                                        <img src="assets/images/cliente3.jpg" alt="Cliente 3" class="rounded-circle mx-auto mt-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Carlos Souza</h5>
+                                            <p class="card-text fs-5 fst-italic">"Serviço de qualidade com um ótimo custo-benefício. Recomendo fortemente!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row flex-nowrap">
+                                <article class="col-md-4 col-12 mb-4">
+                                    <div class="card h-100 border-0" style="border-radius: 15px;">
+                                        <img src="assets/images/cliente4.jpg" alt="Cliente 4" class="rounded-circle mx-auto mt-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Ana Paula</h5>
+                                            <p class="card-text fs-5 fst-italic">"Ótimo serviço e atendimento. Estou muito feliz com o resultado!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="col-md-4 col-12 mb-4">
+                                    <div class="card h-100 border-0" style="border-radius: 15px;">
+                                        <img src="assets/images/cliente5.jpg" alt="Cliente 5" class="rounded-circle mx-auto mt-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Ricardo Mendes</h5>
+                                            <p class="card-text fs-5 fst-italic">"Recomendo a todos! Trabalho excelente!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="col-md-4 col-12 mb-4">
+                                    <div class="card h-100 border-0" style="border-radius: 15px;">
+                                        <img src="assets/images/cliente6.jpg" alt="Cliente 6" class="rounded-circle mx-auto mt-3" style="width: 80px; height: 80px; object-fit: cover; border: 2px solid #0e2947;">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Fernanda Costa</h5>
+                                            <p class="card-text fs-5 fst-italic">"Adorei o trabalho! Meu sofá está como novo!"</p>
+                                            <div class="card-rating mt-2">
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                                <i class="bi bi-star-fill text-warning fs-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Indicadores (Traços) -->
+                    <div class="d-flex justify-content-center mt-4">
+                        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active mx-2" aria-current="true" aria-label="Slide 1" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1" class="mx-2" aria-label="Slide 2" style="background-color: #0e2947; border: none; width: 40px; height: 5px;"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!-- Seção Banner com Vídeo -->
+        <section id="banner" class="banner-section d-flex align-items-center justify-content-center text-center">
+            <video autoplay muted loop id="parallaxVideo" aria-label="Vídeo promocional da Fritz Higienização">
+                <source src="assets/video/video-banner.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+            <div class="content position-relative text-white">
+                <h1 class="fw-bold display-4 animate__animated animate__fadeInDown">
+                    Ganhe um bônus de <span class="text-warning fw-bold fs-1">20% de desconto</span>
+                </h1>
+                <h3 class="fw-light animate__animated animate__fadeInUp">na sua primeira contratação</h3>
+                <p class="lead mt-4 animate__animated animate__fadeIn">
+                    Confie na Fritz Higienização para uma limpeza profissional completa e eficaz. 
+                    Contrate agora com este super desconto!
+                </p>
+
+                <a href="https://wa.me/554799051278?text=Olá,%20acabei%20de%20visitar%20o%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento" 
+                target="_blank" 
+                class="btn btn-success text-uppercase fw-bold">
+                    <i class="bi bi-whatsapp"></i> Agende a sua limpeza!
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Seção do Rodapé -->
+    <footer class="text-white py-5" style="background: #0e2947;">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna Esquerda - Logo e Descrição -->
+                <div class="col-md-4 mb-4">
+                    <figure>
+                        <img src="assets/image/logo.svg" alt="Logo Fritz Higienização" class="img-fluid mb-3">
+                        <figcaption>
+                            Manchas antigas? Odores teimosos? Nossos especialistas em higienização podem transformar seus móveis, devolvendo o frescor e a beleza ao seu lar.
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- Coluna Central - Links Diretos -->
+                <div class="col-md-4 mb-4">
+                    <h5 id="contact" class="text-uppercase fw-bold mb-3">Navegação</h5>
+                    <nav>
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="#services" class="text-white text-decoration-none">Serviços</a></li>
+                            <li><a href="#about" class="text-white text-decoration-none">Sobre</a></li>
+                            <li><a href="#work" class="text-white text-decoration-none">Meus Trabalhos</a></li>
+                            <li><a href="#contact" class="text-white text-decoration-none">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Coluna Direita - Contato e Redes Sociais -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Contato</h5>
+                    <address>
+                        <p><i class="bi bi-telephone-fill me-2"></i>(47) 9905-1278</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>contato@fritz.com.br</p>
+                        <p><i class="bi bi-instagram me-2"></i>
+                            <a href="https://instagram.com/fritzhigienizacao" class="text-white text-decoration-none" target="_blank">Instagram</a>
+                        </p>
+                    </address>
+                    <p><strong class="fs-3">Parcelamos em até 6X</strong></p>
+                </div>
+            </div>
+            <!-- Seção do Mapa -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h5 class="text-uppercase fw-bold mb-3">Localização</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14302.481358657975!2d-48.7977056!3d-26.3387906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x44c89b26548d5ffb%3A0x3a030f679220d121!2zSGlnaWVuaXphw6fDo28gZSBJbXBlcm1lYWJpbGl6YcOnw6NvIEZyaXR6!5e0!3m2!1spt-BR!2sbr!4v1729674222336!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Linha de Direitos Autorais -->
+            <div class="row mt-4 text-center">
+                <div class="col">
+                    <p class="mb-0">©2024 Todos os direitos reservados | FRITZ Higienização e Impermeabilização</p>
+                    <p class="mb-0">Desenvolvido por: <strong>BHK DevXpert</strong></p>
+                </div>
+            </div>
+        </div>
+        <!-- Botão para Voltar ao Topo -->
+        <button id="home" onclick="scrollToTop()" class="btn btn-light rounded-circle" style="position: absolute; bottom: 20px; right: 20px; width: 50px; height: 50px;">
+            <i class="bi bi-arrow-up" style="font-size: 1.5rem;"></i>
+        </button>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Faz a rolagem ser suave
+            });
+        }
+    </script>
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para rolagem suave e colapso do menu -->
+     <script src="assets/js/main.js"></script>
+
+     <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

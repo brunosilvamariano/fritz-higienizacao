@@ -1,0 +1,138 @@
+:root{
+    --primary-blue: #0e2947;
+}
+
+/* Reset básico */
+* {
+    font-size: 1rem; /* Mantém 14px como base */
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Compensação do scroll para a altura do cabeçalho */
+section {
+    scroll-margin-top:150px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 100px; /* Ajuste menor para dispositivos móveis */
+    }
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 100px;
+}
+
+#home{
+    margin-top: 40px;
+}
+
+
+.lead span{
+    font-weight: bold;
+}
+
+.mt-4 .btn {
+    font-weight: bold;
+}
+
+
+/* Estilos personalizados para a seção de benefícios */
+h2 {
+    
+    color: var(--primary-blue); /* Cor personalizada */
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Estilos personalizados para a seção de saq */
+.faq-item {
+    margin-bottom: 1rem; /* Espaçamento entre os itens */
+    border: none; /* Remove bordas do accordion */
+}
+
+.faq-button, .faq-button1{
+    width: 100%; /* Botão ocupa toda a largura */
+    padding: 1rem; /* Aumenta a área clicável */
+    border: none; /* Remove a borda */
+    background: #1a7a9e; /* Cor de fundo personalizada */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    text-align: left; /* Alinhamento à esquerda */
+    transition: background 0.3s; /* Transição suave para hover */
+}
+
+.faq-button:hover {
+    background: #1e9bb5; /* Cor de fundo ao passar o mouse */
+}
+
+.faq-answer {
+    padding: 1rem; /* Espaçamento interno para a resposta */
+    background: rgba(255, 255, 255, 0.1); /* Fundo suave para as respostas */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    margin-top: 0.5rem; /* Espaço acima da resposta */
+}
+
+
+
+.btn-success {
+    transition: background-color 0.3s;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    border-radius: 1rem; /* Arredondar cantos */
+}
+
+
+#bg-video {
+    filter: brightness(50%);
+}
+section#banner {
+    background-attachment: fixed;
+}
+
+/* Estilos para o vídeo de fundo */
+.banner-section {
+    position: relative;
+    height: 100vh; /* Altura completa da tela */
+    color: white;
+    overflow: hidden;
+}
+
+.banner-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.815); /* Overlay para melhorar a legibilidade */
+    z-index: 1;
+}
+
+.banner-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.banner-section .content {
+    position: relative;
+    z-index: 2; /* Conteúdo acima do vídeo */
+}
+
