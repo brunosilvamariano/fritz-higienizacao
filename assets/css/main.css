@@ -12,20 +12,24 @@
 }
 
 /* Compensação do scroll para a altura do cabeçalho */
+.home{
+    scroll-margin-top:100px;
+}
+
 section {
-    scroll-margin-top:150px; /* Ajuste este valor conforme a altura do cabeçalho */
+    scroll-margin-top:80px; /* Ajuste este valor conforme a altura do cabeçalho */
 }
 
 @media (max-width: 768px) {
     section {
-        scroll-margin-top: 100px; /* Ajuste menor para dispositivos móveis */
+        scroll-margin-top: 80px; /* Ajuste menor para dispositivos móveis */
     }
 }
 
 /* Estilos globais */
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 #home{
@@ -96,6 +100,7 @@ h2 {
 #bg-video {
     filter: brightness(50%);
 }
+
 section#banner {
     background-attachment: fixed;
 }
@@ -103,7 +108,7 @@ section#banner {
 /* Estilos para o vídeo de fundo */
 .banner-section {
     position: relative;
-    height: 100vh; /* Altura completa da tela */
+    height: 50vh; /* Altura completa da tela */
     color: white;
     overflow: hidden;
 }
