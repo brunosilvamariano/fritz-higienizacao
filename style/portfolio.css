@@ -1,0 +1,116 @@
+/* ============================
+   SEÇÃO: Transformações Reais
+=============================== */
+
+/* Espaçamento geral da seção */
+#transformacoes {
+  background-color: #f9f9f9; /* Fundo neutro e suave */
+}
+
+/* Título e descrição */
+#transformacoes h2 {
+  font-size: 2.25rem;
+  color: #333;
+}
+
+#transformacoes p {
+  font-size: 1rem;
+}
+
+/* Carrossel horizontal */
+.transformacoes-slider {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Cada item do carrossel */
+.transformacao-item {
+  scroll-snap-align: start;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.transformacao-item:hover {
+  transform: scale(1.02);
+}
+
+/* Imagens antes e depois */
+.transformacao-item img {
+  border-radius: 0.375rem;
+  object-fit: cover;
+  height: auto;
+}
+
+/* Etiquetas "ANTES" e "DEPOIS" */
+.badge.bg-danger,
+.badge.bg-success {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+  border-radius: 0.35rem;
+  font-weight: 600;
+}
+
+/* Etiqueta de destaque de resultado */
+.badge.text-success {
+  font-size: 0.7rem;
+  padding: 0.3em 0.5em;
+  font-weight: 500;
+  background-color: #e6ffed;
+}
+
+/* Título do item */
+.transformacao-item h6 {
+  font-size: 1rem;
+  color: #222;
+}
+
+/* Descrição curta verde */
+.transformacao-item p.text-success {
+  font-size: 0.875rem;
+}
+
+/* Descrição de problema */
+.transformacao-item p.text-muted {
+  font-size: 0.75rem;
+}
+
+/* CTA final - container */
+#transformacoes .rounded {
+  background-color: #ffffff;
+  border-left: 4px solid #198754; /* Verde para chamar atenção */
+}
+
+/* Texto do CTA */
+#transformacoes .rounded h5 {
+  font-size: 1.25rem;
+  color: #000;
+}
+
+#transformacoes .rounded p {
+  font-size: 0.95rem;
+}
+
+/* Botão WhatsApp */
+.btn-custom.btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom.btn-whatsapp:hover {
+  background-color: #1ebc59;
+}
+
+/* Responsivo extra */
+@media (max-width: 576px) {
+  .transformacao-item {
+    width: 260px !important;
+  }
+}

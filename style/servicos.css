@@ -1,0 +1,90 @@
+/* ==================== VARIÁVEIS EXCLUSIVAS DA SEÇÃO SERVIÇOS ==================== */
+:root {
+  --servicos-bg: #f5f7f8;
+  --servico-card-bg: #ffffff;
+  --servico-icon-color: #5e84a5;
+  --servico-title-color: #3b3e37;
+  --servico-text-color: #666;
+  --servico-border-radius: 1.5rem;
+}
+
+/* ==================== ESTILIZAÇÃO GERAL ==================== */
+.servicos-section {
+  background-color: var(--servicos-bg);
+}
+
+.titulo-principal {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--servico-title-color);
+}
+
+.descricao-principal {
+  color: var(--servico-text-color);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card-servico {
+  border: none;
+  background-color: var(--servico-card-bg);
+  border-radius: var(--servico-border-radius);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.icon-servico {
+  font-size: 2.5rem;
+  color: var(--servico-icon-color);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: var(--servico-title-color);
+  font-weight: 600;
+}
+
+.lista-servico {
+  list-style: none;
+  padding-left: 0;
+  color: var(--servico-text-color);
+  font-size: 0.95rem;
+}
+
+.lista-servico li {
+  margin-bottom: 0.4rem;
+}
+
+.texto-orcamento {
+  font-size: 1rem;
+  color: var(--servico-text-color);
+}
+
+.link-whatsapp {
+  color: var(--servico-icon-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* ==================== RESPONSIVO COM CARROSSEL ==================== */
+@media (max-width: 767px) {
+  .row.row-cols-1.row-cols-sm-2.row-cols-lg-4 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .row.row-cols-1.row-cols-sm-2.row-cols-lg-4 > .col {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+  }
+}

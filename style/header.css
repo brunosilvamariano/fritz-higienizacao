@@ -1,0 +1,157 @@
+/* =================================================================== */
+/* 🎨 Variáveis de Cores - Exclusivas para o HEADER (Fritz Higienização)
+   Mantidas em :root para fácil reaproveitamento global.
+   =================================================================== */
+:root {
+  /* Cor de fundo do header (usado com opacidade no .header-inner) */
+  --header-bg-color: #5e84a5;
+
+  /* Cor padrão dos ícones de redes sociais */
+  --header-icon-color: #3b3e37;
+
+  /* Cor dos ícones ao passar o mouse (hover) */
+  --header-icon-hover: #efac41;
+
+  /* Cor da sombra (opcional para reuso em outros elementos do header) */
+  --header-shadow-color: rgba(0, 0, 0, 0.1);
+}
+/* =================================================================== */
+
+
+
+/* 🔝 Header fixo e com aparência moderna */
+.logo-bar {
+  background: transparent; /* Fundo transparente até o conteúdo interno */
+  padding-top: 1rem;
+  z-index: 1050;
+}
+
+/* 🔳 Container interno do header com estilo moderno e leveza */
+.logo-bar .header-inner {
+  background: var(--header-bg-color); /* Fundo com leve transparência */
+  border-radius: 2rem;
+  box-shadow: 0 4px 16px var(--header-shadow-color);
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 70px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  padding: 0 1.5rem;
+}
+
+/* 📏 Logotipo com redimensionamento automático */
+.main-logo {
+  max-height: 45px;
+  height: auto;
+  width: auto;
+  max-width: 160px;
+  transition: all 0.3s ease;
+}
+
+/* =============================== */
+/* 🌐 Redes Sociais - Header Style */
+/* =============================== */
+
+.social-icons {
+  display: flex;
+  gap: 1rem; /* Espaçamento entre ícones */
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent; /* Pode ser alterado se quiser fundo visível */
+  color: var(--header-icon-color);
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Estilo ao passar o mouse (hover) - suave e elegante */
+
+
+/* Ícones centralizados e com animação leve */
+.social-link i {
+  transition: transform 0.3s ease;
+}
+
+/* Animação extra ao hover (opcional) */
+.social-link:hover i {
+  transform: scale(1.1);
+}
+
+
+/* =================== 📱 RESPONSIVIDADE =================== */
+
+/* Tablets - até 1024px */
+@media (max-width: 1024px) {
+  .logo-bar .header-inner {
+    max-width: 90%;
+    height: 65px;
+  }
+
+  .main-logo {
+    max-height: 40px;
+    max-width: 140px;
+  }
+}
+
+/* Tablets menores - até 768px */
+@media (max-width: 768px) {
+  .logo-bar .header-inner {
+    height: 60px;
+    padding: 0 1rem;
+  }
+
+  .main-logo {
+    max-height: 38px;
+    max-width: 130px;
+  }
+
+  .logo-bar .social-icons i {
+    font-size: 1.25rem;
+  }
+}
+
+/* Celulares grandes - até 425px */
+@media (max-width: 425px) {
+  .logo-bar .header-inner {
+    height: 58px;
+    padding: 0 0.8rem;
+  }
+
+  .main-logo {
+    max-height: 34px;
+    max-width: 120px;
+  }
+
+  .logo-bar .social-icons {
+    gap: 0.8rem;
+  }
+
+  .logo-bar .social-icons i {
+    font-size: 1.2rem;
+  }
+}
+
+/* Celulares pequenos - até 375px */
+@media (max-width: 375px) {
+  .logo-bar .header-inner {
+    height: 54px;
+    padding: 0 0.7rem;
+  }
+
+  .main-logo {
+    max-height: 30px;
+    max-width: 110px;
+  }
+
+  .logo-bar .social-icons i {
+    font-size: 1.1rem;
+  }
+}
