@@ -21,6 +21,7 @@
 #about {
   background-color: var(--about-bg);
   color: var(--about-text-color);
+   overflow: hidden;
 }
 
 #about h2,
