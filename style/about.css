@@ -1,0 +1,44 @@
+:root {
+  /* ============================
+     Paleta de Cores – About
+  ============================ */
+  --about-bg: #f8f9fa; /* Cor de fundo da seção */
+  --about-text-color: #666; /* Cor do texto principal */
+  --about-title-color: #3b3e37; /* Cor dos títulos */
+  --about-highlight-color: #5e84a5; /* Cor de destaque para ícones, links ou frases importantes */
+  --about-card-bg: #ffffff; /* Fundo do bloco de missão, visão, valores */
+  --about-border-radius: 1.5rem; /* Borda arredondada dos cards e elementos */
+  --about-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Sombra suave */
+
+  /* ============================
+     Botões e Links – About
+  ============================ */
+  --about-btn-bg: #5e84a5;
+  --about-btn-text: #ffffff;
+  --about-btn-hover-bg: #466a88;
+}
+
+#about {
+  background-color: var(--about-bg);
+  color: var(--about-text-color);
+}
+
+#about h2,
+#about h3 {
+  color: var(--about-title-color);
+}
+
+#about .btn {
+  background-color: var(--about-btn-bg);
+  color: var(--about-btn-text);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#about .btn:hover {
+  background-color: var(--about-btn-hover-bg);
+}
+
+
+
+

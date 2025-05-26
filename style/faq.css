@@ -1,0 +1,86 @@
+/* ===========================
+   FAQ - Estilo Moderno
+   =========================== */
+:root {
+  --faq-bg: #f8fbfc;
+  --faq-title: #222;
+  --faq-subtitle: #666;
+  --faq-item-bg: #fff;
+  --faq-shadow: rgba(0, 0, 0, 0.06);
+  --accent-color: #4aa4c5;
+  --faq-radius: 1.25rem;
+}
+
+/* Estilo da seção */
+#faq {
+  background-color: var(--faq-bg);
+}
+
+.text-faq-title {
+  color: var(--faq-title);
+}
+
+.faq-subtitle {
+  color: var(--faq-subtitle);
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Estilo do Accordion */
+.faq-accordion .accordion-item {
+  background-color: var(--faq-item-bg);
+  border: none;
+  border-radius: var(--faq-radius);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px var(--faq-shadow);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  position: relative; /* necessário para o ::before */
+}
+
+/* Borda superior animada com gradiente */
+.faq-accordion .accordion-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--accent-color), #fdd835, var(--accent-color));
+  background-size: 200% 200%;
+  animation: gradientMove 3s ease infinite;
+  border-radius: var(--faq-radius) var(--faq-radius) 0 0;
+  z-index: 2;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.faq-accordion .accordion-button {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+  background-color: transparent;
+  color: var(--faq-title);
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background-color: rgba(74, 164, 197, 0.05);
+  color: var(--accent-color);
+}
+
+.faq-accordion .accordion-body {
+  color: var(--faq-subtitle);
+  font-size: 0.95rem;
+  padding: 1rem 1.25rem 1.25rem 2.5rem;
+}
+
+/* Ícones com destaque */
+.text-accent {
+  color: var(--accent-color);
+}

@@ -510,7 +510,197 @@
             </aside>
           </div>
         </section>
-       
+        <!-- Seção Sobre Nós com Vídeos -->
+        <section id="about" class="py-5">
+          <div class="container">
+            <!-- Cabeçalho da seção -->
+            <header class="mb-4 text-center">
+              <h2 class="fw-bold fs-1 mb-2">Sobre Nós</h2>
+              <p class="mx-auto sobre-descricao">
+                Somos uma empresa dedicada à higienização e conservação de estofados, comprometida em entregar qualidade, confiança e resultados reais que transformam o ambiente dos nossos clientes.
+              </p>
+            </header>
+
+            <!-- Conteúdo principal: texto à esquerda e vídeos à direita -->
+            <div class="row align-items-center gx-5">
+              <!-- Informações institucionais -->
+              <article class="col-12 col-md-6 mb-4 mb-md-0" aria-labelledby="missao-visao-valores">
+                <div id="missao-visao-valores">
+                  <h3 class="h4 fw-semibold mb-3">Nossa Missão</h3>
+                  <p class="sobre-texto mb-4">
+                    Oferecer serviços de higienização especializados com foco na satisfação do cliente e na preservação dos móveis, garantindo ambientes mais saudáveis e confortáveis.
+                  </p>
+
+                  <h3 class="h4 fw-semibold mb-3">Nossa Visão</h3>
+                  <p class="sobre-texto mb-4">
+                    Ser referência nacional em qualidade e inovação no segmento de higienização, estabelecendo parcerias duradouras e promovendo a sustentabilidade.
+                  </p>
+
+                  <h3 class="h4 fw-semibold mb-3">Nossos Valores</h3>
+                  <ul class="list-unstyled sobre-lista">
+                    <li>✔ Qualidade e Eficiência</li>
+                    <li>✔ Transparência e Ética</li>
+                    <li>✔ Respeito ao Cliente e ao Meio Ambiente</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- Galeria de vídeos com carrossel -->
+              <aside class="col-12 col-md-6" aria-label="Vídeos institucionais">
+                <div id="videoCarousel" class="carousel slide" data-bs-ride="false">
+                  <div class="carousel-inner rounded shadow-sm overflow-hidden" style="max-height: 320px;">
+                    <!-- Vídeos -->
+                    <div class="carousel-item active">
+                      <video controls class="w-100 h-auto">
+                        <source src="/assets/img/video/video1.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                      </video>
+                    </div>
+                    <div class="carousel-item">
+                      <video controls class="w-100 h-auto">
+                        <source src="/assets/img/video/video2.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                      </video>
+                    </div>
+                    <div class="carousel-item">
+                      <video controls class="w-100 h-auto">
+                        <source src="/assets/img/video/video3.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                      </video>
+                    </div>
+                    <div class="carousel-item">
+                      <video controls class="w-100 h-auto">
+                        <source src="/assets/img/video/video4.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                      </video>
+                    </div>
+                    <div class="carousel-item">
+                      <video controls class="w-100 h-auto">
+                        <source src="/assets/img/video/video5.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                      </video>
+                    </div>
+                  </div>
+
+                  <!-- Controles do carrossel -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev" aria-label="Vídeo anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next" aria-label="Próximo vídeo">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </aside>
+            </div>
+
+            <!-- Call to action final -->
+            <footer class="mt-5">
+              <aside class="rounded p-4 text-center">
+                <p class="mt-4 texto-orcamento">
+                  <a href="https://wa.me/554799051278?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20os%20serviços%20de%20higienização%20de%20estofados.%20Poderiam%20me%20informar%20os%20valores%20para%20sofás,%20colchões%20e%20cadeiras?%20Aguardo%20o%20retorno.%20Obrigado!"
+                    target="_blank" rel="noopener" class="btn-custom btn-whatsapp w-100 w-sm-auto" aria-label="Solicitar orçamento via WhatsApp">
+                    Orçamento gratuito pelo WhatsApp
+                  </a>
+                </p>
+              </aside>
+            </footer>
+          </div>
+        </section>
+        <!-- Seção FAQ -->
+        <section id="faq" class="py-5">
+          <div class="container">
+            <!-- Cabeçalho da Seção -->
+            <div class="text-center mb-5">
+              <h2 class="fw-bold display-6 text-faq-title">Perguntas Frequentes</h2>
+              <p class="faq-subtitle">
+                Tire suas dúvidas e descubra por que somos referência em higienização profissional.
+              </p>
+            </div>
+
+            <!-- Lista de Perguntas (Accordion) -->
+            <div class="accordion faq-accordion" id="faqAccordion">
+              <!-- FAQ 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                    <i class="bi bi-clock-history me-2 text-accent"></i>
+                    Qual o tempo médio de secagem após a higienização?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" aria-labelledby="faq1-heading"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A secagem geralmente leva de 6 a 12 horas, dependendo da ventilação e do tipo de tecido.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    <i class="bi bi-shield-check me-2 text-accent"></i>
+                    Os produtos usados são seguros para crianças e pets?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sim, usamos produtos hipoalergênicos, biodegradáveis e aprovados pela Anvisa.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    <i class="bi bi-house-door me-2 text-accent"></i>
+                    Preciso sair de casa durante o serviço?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Não é necessário! Todo o processo é limpo, silencioso e pode ser acompanhado sem preocupação.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    <i class="bi bi-geo-alt me-2 text-accent"></i>
+                    Vocês atendem fora de Blumenau?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sim! Atendemos Blumenau e região. Para cidades vizinhas, consulte disponibilidade via WhatsApp.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

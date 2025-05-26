@@ -1,9 +1,11 @@
-@import url('variaveis.css');
+
 @import url('header.css');
 @import url('transformacao.css');
 @import url('servicos.css');
 @import url('processos.css');
 @import url('home.css');
+@import url('faq.css');
+@import url('about.css');
 
 /* Fonte global */
 
