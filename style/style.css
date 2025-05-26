@@ -1,16 +1,8 @@
 @import url('variaveis.css');
 @import url('header.css');
-@import url('portfolio.css');
-@import url('frases-loop.css');
+@import url('transformacao.css');
 @import url('servicos.css');
-@import url('abertofechado.css');
-@import url('about.css');
-@import url('faq.css');
-@import url('tecnologia.css');
-@import url('planos.css');
-@import url('footer.css');
-@import url('global.css');
-
+@import url('processos.css');
 @import url('home.css');
 
 /* Fonte global */

@@ -1,0 +1,80 @@
+:root {
+  /* Variáveis da seção Processo */
+  --processo-bg: #f5f7f8;
+  --processo-card-bg: #ffffff;
+  --processo-icon-color: #5e84a5;
+  --processo-title-color: #3b3e37;
+  --processo-text-color: #666;
+}
+
+/* Estilo da seção de processo */
+#processo {
+  background-color: var(--processo-bg);
+}
+
+/* Parallax da seção processo */
+#processo {
+  background-image: url('/assets/img/banner-hero/processos.png'); /* substitua pela sua imagem */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sobreposição para leitura */
+#processo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(245, 247, 248, 0.301); /* cor de sobreposição com transparência */
+  z-index: -1;
+}
+
+/* Número circular de cada etapa */
+.etapa-numero {
+  position: absolute;
+  top: -16px;
+  left: 16px;
+  background-color: var(--processo-icon-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícone centralizado com fundo claro */
+.icone-etapa {
+  background-color: #eef4ff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--processo-icon-color);
+}
+
+/* Card da etapa */
+#processo .card {
+  background-color: var(--processo-card-bg);
+}
+
+/* Título da etapa */
+#processo h5 {
+  color: var(--processo-title-color);
+}
+
+/* Texto explicativo da etapa */
+#processo p {
+  color: var(--processo-text-color);
+}
