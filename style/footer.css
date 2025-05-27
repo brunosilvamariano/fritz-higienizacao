@@ -1,36 +1,69 @@
-/* Cores da Seção Antes e Depois */
 :root {
-  --antes-bg: #f8f9fa;        /* Fundo claro neutro */
-  --antes-texto: #6c757d;     /* Texto explicativo (cinza Bootstrap) */
-  --antes-titulo: #212529;    /* Título (preto Bootstrap) */
-  --antes-icone: #198754;     /* Verde para ícones de check */
-  --antes-btn: #ffc107;       /* Botão amarelo */
-  --antes-btn-text: #000;     /* Texto do botão */
-  --comparador-bg: #ffffff;   /* Fundo dos cards comparadores */
-  --comparador-borda: #dee2e6;/* Borda sutil dos comparadores */
-  --comparador-shadow: rgba(0, 0, 0, 0.05); /* Sombra leve */
-}
-.antes-depois-section {
-  background-color: var(--antes-bg);
-  color: var(--antes-texto);
+  --cor-fundo-rodape: #5e84a5;
+  --cor-texto-rodape: #d3dbd9;
+  --cor-titulo-rodape: #1a2f3d;
+  --cor-botao-topo: #d3dbd9;
+  --cor-whatsapp: #25D366;
 }
 
-.antes-depois-section h2 {
-  color: var(--antes-titulo);
+/* Container do Rodapé */
+.rodape-frtz {
+  background-color: var(--cor-fundo-rodape);
+  color: var(--cor-texto-rodape);
 }
 
-.antes-depois-section .bi-check-circle-fill {
-  color: var(--antes-icone);
+/* Títulos das colunas */
+.rodape-titulo {
+  color: var(--cor-titulo-rodape);
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-.antes-depois-section .btn {
-  background-color: var(--antes-btn);
-  color: var(--antes-btn-text);
+/* Lista de informações */
+.rodape-lista li {
+  margin-bottom: 0.5rem;
+}
+
+/* Botão voltar ao topo */
+.btn-voltar-topo-frtz {
+  background-color: var(--cor-botao-topo);
   border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #1a2f3d;
+  transition: all 0.3s ease;
+}
+.btn-voltar-topo-frtz:hover {
+  background-color: #d1d1d1;
 }
 
-.comparador-wrapper {
-  background: var(--comparador-bg);
-  box-shadow: 0 0 10px var(--comparador-shadow);
-  border: 1px solid var(--comparador-borda);
+/* Créditos */
+.rodape-creditos {
+  color: var(--cor-texto-rodape);
+}
+.rodape-link {
+  color: var(--cor-titulo-rodape);
+  text-decoration: none;
+}
+.rodape-link:hover {
+  text-decoration: underline;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-botao-frtz {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--cor-whatsapp);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.whatsapp-botao-frtz:hover {
+  background-color: #1ebf5d;
 }
