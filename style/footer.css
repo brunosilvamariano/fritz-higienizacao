@@ -1,0 +1,72 @@
+:root {
+  /* Cores do Footer */
+  --footer-bg: #5e84a5; /* azul principal */
+  --footer-text: #e9f1f4; /* tom claro para texto */
+  --footer-title: #ffffff; /* títulos em branco */
+  --footer-icon: #d3e3ec;
+  --footer-border-radius: 1rem;
+  --footer-shadow: 0 -4px 12px rgba(0, 0, 0, 0.03);
+
+  /* Botões flutuantes */
+  --btn-whatsapp-bg: #25d366;
+  --btn-whatsapp-color: #fff;
+  --btn-topo-bg: #ffffff;
+  --btn-topo-color: #5e84a5;
+}
+
+/* Rodapé */
+#site-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--footer-shadow);
+}
+
+#site-footer h5 {
+  color: var(--footer-title);
+}
+
+#site-footer ul li {
+  margin-bottom: 0.5rem;
+  color: var(--footer-text);
+}
+
+/* Link fictício de contato */
+#site-footer p,
+#site-footer li {
+  color: var(--footer-text);
+}
+
+/* Botão flutuante WhatsApp */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--btn-whatsapp-bg);
+  color: var(--btn-whatsapp-color);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-fixo:hover {
+  background-color: #1ebd5a;
+}
+
+/* Botão Voltar ao Topo */
+.btn-voltar-topo {
+  background-color: var(--btn-topo-bg);
+  color: var(--btn-topo-color);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar-topo:hover {
+  background-color: #e0e0e0;
+}
