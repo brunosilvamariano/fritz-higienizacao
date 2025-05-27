@@ -174,3 +174,17 @@
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+  .scroll-container {
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+  }
+
+  .comparador-wrapper {
+    width: 100% !important;
+    max-width: 300px;
+  }
+}
+
