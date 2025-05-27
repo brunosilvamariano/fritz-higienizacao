@@ -93,21 +93,6 @@
   font-size: 0.95rem;
 }
 
-/* Botão WhatsApp */
-.btn-custom.btn-whatsapp {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  font-weight: 600;
-  padding: 0.6rem 1.2rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-custom.btn-whatsapp:hover {
-  background-color: #1ebc59;
-}
-
 /* Responsivo extra */
 @media (max-width: 576px) {
   .transformacao-item {
